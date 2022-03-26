@@ -1,0 +1,12 @@
+{
+    "name": "godlike/demo-task",
+    "authors": [
+        {
+            "name": "Nikita",
+            "email": "nktpgrlv@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

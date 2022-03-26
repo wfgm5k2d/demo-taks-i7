@@ -1,0 +1,13 @@
+.env
+scripts/docker-compose-*
+!scripts/docker-compose-app.service.example
+apache2/sites-enabled/000-default.conf
+apache2/sites-enabled/000-default-ssl.conf
+
+letsencrypt/*
+!letsencrypt/.gitkeep
+
+mysql/data/*
+mysql/logs/*
+!mysql/data/.gitkeep
+!mysql/logs/.gitkeep

@@ -1,0 +1,13 @@
+<VirtualHost *:443>
+	ServerAdmin ADMIN_EMAIL
+	DocumentRoot WEBROOT
+    ServerName DOMAIN
+    ServerAlias www.DOMAIN
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/DOMAIN/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/DOMAIN/privkey.pem
+</VirtualHost>
